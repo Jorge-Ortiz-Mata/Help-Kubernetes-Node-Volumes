@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: third-node-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: third-node-pod
@@ -20,10 +20,13 @@ spec:
           volumeMounts:
             - mountPath: /app/story
               name: third-node-volume
-
       volumes:
         - name: third-node-volume
-          emptyDir: {}
+          hostPath:
+            path: /data
+            type: DirectoryOrCreate
+          # emptyDir: {}
+
 
 
 
