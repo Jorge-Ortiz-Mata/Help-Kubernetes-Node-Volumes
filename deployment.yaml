@@ -1,0 +1,20 @@
+appVersion: apps/v1
+kind: Deployment
+metadata:
+  name: third-node-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: third-node-pod
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: third-node-pod
+        tier: backend
+    spec:
+      containers:
+        - name: third-node-container
+        image: jorge107/node-third-stories
+
