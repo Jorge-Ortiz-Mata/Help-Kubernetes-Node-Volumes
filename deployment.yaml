@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
         - name: third-node-container
-        image: jorge107/node-third-stories
+        image: jorge107/node-third-stories:v1
 
