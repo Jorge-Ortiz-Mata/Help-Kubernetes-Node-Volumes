@@ -1,4 +1,4 @@
-appVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: third-node-deployment
@@ -16,5 +16,14 @@ spec:
     spec:
       containers:
         - name: third-node-container
-        image: jorge107/node-third-stories:v1
+          image: jorge107/node-third-stories:v2
+          volumeMounts:
+            - mountPath: /app/story
+              name: third-node-volume
+
+      volumes:
+        - name: third-node-volume
+          emptyDir: {}
+
+
 
