@@ -45,6 +45,14 @@ Get your services first, ande run the next command:
 
 `minikube service my_service_name`.
 
+### 4. Volumes and Persistent Volumes.
+
+Volumes can be used in Kubernetes, but for simple volumes, these will be deleted once the pod is eliminated. We can definde Persistent Volumes to maintain our data alive even if the pod is deleted. They use a Persistent Volume Claim where is another configuration in Kubernetes.
+
+### 5. Enviroment variables.
+
+We could also create environment variables in our Kubernetes Cluster. We created a varenv file and in our deployment file we referenced the variables from the previous file.
+
 ## Author.
 
   - Jorge Ortiz.
