@@ -14,7 +14,7 @@ You can have:
 
 ### 1. Installation.
 
-You have to install **kubectl** and **minikube** in your local machine to be able to launch the kubernetes dashboard. YOu can install a virtual machine or use docker to create a container where you can have your dashboard.
+You have to install **kubectl** and **minikube** in your local machine to be able to launch the kubernetes dashboard. You can install a virtual machine or use docker to create a container where you can have your dashboard.
 
 Once you have installled the two requirementes above, run the next command to crearte the Docker Containers.
 
