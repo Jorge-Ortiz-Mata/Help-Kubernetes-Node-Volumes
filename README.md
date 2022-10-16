@@ -38,7 +38,7 @@ You can now run kubernetes commands on the local machine. You can get all your d
   - Get volumes: `kubectl get pv`.
   - Get volumes claims: `kubectl get pvc`.
 
-### 3. Initialize Kubernetes pod.
+### 3. Initialize Kubernetes pods.
 
 You have to configure your service first, and then, you can deploy your app to be accessible using your local browser.
 Get your services first, ande run the next command:
@@ -47,5 +47,5 @@ Get your services first, ande run the next command:
 
 ## Author.
 
-Jorge Ortiz.
-Software engineer.
+  - Jorge Ortiz.
+  - Software engineer.
