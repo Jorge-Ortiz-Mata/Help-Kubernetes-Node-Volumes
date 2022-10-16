@@ -22,9 +22,9 @@ spec:
               name: third-node-volume
       volumes:
         - name: third-node-volume
-          hostPath:
-            path: /data
-            type: DirectoryOrCreate
+          persistentVolumeClaim:
+            claimName: third-node-volume-claim
+
           # emptyDir: {}
 
 
