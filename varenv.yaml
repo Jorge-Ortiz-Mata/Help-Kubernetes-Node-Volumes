@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: third-node-configmap
+data:
+  # key: value..
+  folder: 'story'

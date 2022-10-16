@@ -17,6 +17,12 @@ spec:
       containers:
         - name: third-node-container
           image: jorge107/node-third-stories:v2
+          env:
+            - name: STORY_FOLDER
+              valueFrom:
+                configMapKeyRef:
+                  name: third-node-configmap
+                  key: folder
           volumeMounts:
             - mountPath: /app/story
               name: third-node-volume
